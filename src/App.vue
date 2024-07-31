@@ -1,4 +1,13 @@
-<script setup></script>
+<script setup>
+import { ref, reactive } from "vue";
+import { db } from "./data/guitarras";
+
+const state = reactive({
+  guitarras: db,
+});
+
+console.log(state.guitarras);
+</script>
 
 <template>
   <header class="py-5 header">
